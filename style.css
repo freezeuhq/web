@@ -1,0 +1,107 @@
+body {
+    font-family: "Comic Sans MS", sans-serif;
+    background: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+   
+  nav {
+    background: black;
+    padding: 8px;
+  }
+   
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+  }
+   
+  h1 {
+    color: #d02626;
+    text-transform: uppercase;
+  }
+   
+  .comic {
+    max-width: 826px;
+    margin: 30px auto;
+  }
+   
+  .scene {
+    width: 250px;
+    height: 250px;
+    border: 3px solid black;
+    background: white;
+    margin: 8px;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+  }
+   
+  .scene img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+   
+  .caption {
+    position: absolute;
+    left: 0; right: 0;
+    background: #e2e971;
+    padding: 8px;
+    margin: 0;
+    text-align: left;
+    font-size: 13px;
+  }
+   
+  .caption.top    { top: 0;    border-bottom: 2px solid black; }
+  .caption.bottom { bottom: 0; border-top:    2px solid black; }
+   
+  .speech {
+    position: absolute;
+    z-index: 1;
+    width: 40%;
+    background: white;
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 16px 10px;
+    top: -15px;
+    text-align: center;
+    font-size: 12px;
+  }
+   
+  .speech:before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-style: solid;
+    border-color: black transparent;
+    border-width: 16px 16px 0;
+    bottom: -15px;
+    left: 50%;
+    margin-left: -17px;
+    width: 0;
+  }
+   
+  .speech:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-style: solid;
+    border-color: white transparent;
+    border-width: 13px 13px 0;
+    bottom: -11px;
+    left: 50%;
+    margin-left: -14px;
+    width: 0;
+  }
+   
+  .speech.left  { left:  -15px; }
+  .speech.right { right: -15px; }
+   
+  footer {
+    margin-top: 40px;
+    padding: 10px;
+    font-size: 13px;
+    color: #555;
+  }
